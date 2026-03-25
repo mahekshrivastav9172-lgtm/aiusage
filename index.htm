@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artificial Intelligence in Real-World Applications</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: #eef1f5;
+            color: #2b2b2b;
+            line-height: 1.75;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(120deg, #0b2545, #13315c, #134074);
+            color: white;
+            padding: 90px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            animation: heroFade 1s ease;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 850px;
+            margin: auto;
+            opacity: 0.95;
+            animation: heroFade 1.3s ease;
+        }
+
+        /* ===== MAIN ===== */
+        main {
+            max-width: 1150px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .section {
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 45px;
+            border: 1px solid #e2e6ea;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            animation: fadeSlide 0.8s ease both;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+        }
+
+        .section img {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .section:hover img {
+            transform: scale(1.04);
+        }
+
+        .section-content {
+            padding: 38px;
+        }
+
+        .section h2 {
+            font-size: 27px;
+            margin-top: 0;
+            color: #13315c;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: #13315c;
+            margin-top: 10px;
+            animation: lineGrow 0.8s ease;
+        }
+
+        /* ===== INSIGHTS ===== */
+        .insights {
+            background-color: #f4f6f9;
+            padding: 75px 20px;
+            border-top: 1px solid #dde2e7;
+        }
+
+        .insights-container {
+            max-width: 1150px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .insight-box {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid #e2e6ea;
+            box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+            animation: softPulse 5s ease-in-out infinite;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .insight-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 35px rgba(0,0,0,0.1);
+        }
+
+        .insight-box h3 {
+            margin-top: 0;
+            font-size: 24px;
+            color: #0b2545;
+        }
+
+        .insight-box ul {
+            padding-left: 20px;
+        }
+
+        .insight-box li {
+            margin-bottom: 12px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #0b1320;
+            color: #b8c1cc;
+            text-align: center;
+            padding: 28px 15px;
+            font-size: 14px;
+        }
+
+        /* ===== ANIMATIONS ===== */
+        @keyframes heroFade {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeSlide {
+            from {
+                opacity: 0;
+                transform: translateY(22px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes lineGrow {
+            from {
+                width: 0;
+            }
+            to {
+                width: 60px;
+            }
+        }
+
+        @keyframes softPulse {
+            0%, 100% {
+                box-shadow: 0 8px 22px rgba(0,0,0,0.06);
+            }
+            50% {
+                box-shadow: 0 14px 32px rgba(19,49,92,0.25);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .insights-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>How Artificial Intelligence Makes Our Daily Life Easier</h1>
+    <p>
+        A professional overview of how Artificial Intelligence enhances productivity,
+        improves decision-making, and drives innovation across industries.
+    </p>
+</section>
+
+<main>
+
+    <div class="section">
+        <img src="pic1.jpg" alt="Artificial intelligence technology overview">
+        <div class="section-content">
+            <h2>Understanding Artificial Intelligence</h2>
+            <p>
+                Artificial Intelligence enables systems to analyze information, learn from data,
+                and perform complex tasks with minimal human intervention. Organizations use AI
+                to improve efficiency, accuracy, and scalability in modern operations.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="pic2.jpg" alt="AI used in business operations">
+        <div class="section-content">
+            <h2>AI in Business Operations</h2>
+            <p>
+                AI streamlines workflows, automates repetitive tasks, and supports strategic
+                decision-making. This allows businesses to reduce costs, enhance productivity,
+                and respond quickly to changing market conditions.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="pic3.png" alt="AI improving customer experience">
+        <div class="section-content">
+            <h2>Customer Experience & Personalization</h2>
+            <p>
+                Through intelligent data analysis, AI helps companies understand customer needs
+                and deliver personalized experiences. This results in higher engagement,
+                satisfaction, and long-term customer loyalty.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="pic4.png" alt="Artificial intelligence in healthcare">
+        <div class="section-content">
+            <h2>Innovation in Healthcare</h2>
+            <p>
+                AI supports healthcare professionals by assisting in diagnosis, predictive
+                analytics, and treatment planning. These innovations improve patient outcomes
+                while reducing operational strain.
+            </p>
+        </div>
+    </div>
+
+</main>
+
+<section class="insights">
+    <div class="insights-container">
+
+        <div class="insight-box">
+            <h3>Conclusion</h3>
+            <p>
+                Artificial Intelligence is no longer a future concept but a present-day business
+                enabler. Its ability to automate, analyze, and optimize processes makes it a
+                critical driver of sustainable growth and innovation.
+            </p>
+        </div>
+
+        <div class="insight-box">
+            <h3>Key Insights</h3>
+            <ul>
+                <li>AI increases efficiency and operational scalability</li>
+                <li>Data-driven insights improve business outcomes</li>
+                <li>Personalization enhances customer engagement</li>
+                <li>Healthcare benefits from intelligent analysis</li>
+                <li>Responsible AI adoption ensures long-term value</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>Professional Business Website | Artificial Intelligence Overview</p>
+</footer>
+
+</body>
+</html>
